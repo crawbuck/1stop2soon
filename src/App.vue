@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <Header title="one stop" />
-
+    <Gallery />
     <Footer title="too soon." />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Gallery from './components/Gallery.vue';
 import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
     Header,
+    Gallery,
     Footer
   }
 }
