@@ -56,9 +56,10 @@ export default {
     letter-spacing: -0.5vw;
     font-size: 19vw;
   }
-  ul, li {
+  ul {
     padding: 0;
     margin: 0;
     display: none;
+    list-style: none;
   }
 </style>
