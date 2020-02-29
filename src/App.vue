@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!-- 
-      This site was built using VueJS using Netlify & Are.na
-      For Nina Harcus, with love by Michael Crawbuck. 
-    -->
     <Header title="one stop" />
     <Gallery />
     <Footer title="too soon." />
@@ -14,18 +10,26 @@
 import Header from './components/Header.vue';
 import Gallery from './components/Gallery.vue';
 import Footer from './components/Footer.vue';
+
 export default {
   name: 'App',
   components: {
     Header,
     Gallery,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>
 
 <style lang="scss">
-  @import url("https://use.typekit.net/tfh2cfl.css");
+  @font-face {
+    font-family: 'Bobby';
+    src: url('assets/F37Bobby-Regular.eot'); /* IE9 Compat Modes */
+    src: url('assets/F37Bobby-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/F37Bobby-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('assets/F37Bobby-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('assets/F37Bobby-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  }
   body {
     margin: 0;
     background: #2C2C36;
@@ -33,11 +37,28 @@ export default {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    font-family: starling, serif;
+    font-family: 'Bobby', serif;
     font-weight: 900;
     font-style: italic;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: .2rem;
-    font-size: 2rem;   
+    font-size: 2rem;
+    position: relative;
+  }
+  header,
+  footer {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+  }
+  h1 {
+    margin: 0;
+    letter-spacing: -0.5vw;
+    font-size: 19vw;
+  }
+  ul, li {
+    padding: 0;
+    margin: 0;
+    display: none;
   }
 </style>

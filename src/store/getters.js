@@ -1,6 +1,6 @@
 const getters = {
 	items(state) {
-		return state.items
+		return state.items;
 	}
 }
 

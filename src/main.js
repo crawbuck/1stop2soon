@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 import store from './store/store';
 import VueLazyload from 'vue-lazyload';
 
@@ -10,7 +10,7 @@ Vue.use(VueLazyload)
 new Vue({
   store,
   created() {
-    this.$store.dispatch('init')
+    this.$store.dispatch('init');
   },	
   render: h => h(App),
 }).$mount('#app')

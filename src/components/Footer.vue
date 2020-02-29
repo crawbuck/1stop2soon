@@ -8,10 +8,18 @@
 export default {
   name: 'Footer',
   props: {
-    title: String
-  }
-}
+    title: String,
+  },
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+h1 {
+  text-align: right;
+  padding-right: 12px;
+}
+footer {
+  bottom: 0;
+  right: 0;
+}
 </style>

@@ -8,12 +8,14 @@
 export default {
   name: 'Header',
   props: {
-    title: String
-  }
-}
+    title: String,
+  },
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style scoped lang="scss">
+header {
+  top: 0;
+  left: 0;
+}
 </style>
