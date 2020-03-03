@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <div v-for="(word, index) in message" :key="index">
+      {{ word }}
+    </div>
   </header>
 </template>
 
@@ -9,6 +11,11 @@ export default {
   name: 'Header',
   props: {
     title: String,
+  },
+  computed: {
+    message() {
+      return this.title.trim().split(' ');
+    },
   },
 };
 </script>

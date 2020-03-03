@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <Header title="one stop" />
+    <Header title="one stop too soon" />
     <Gallery />
-    <Footer title="too soon." />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
 import Gallery from './components/Gallery.vue';
-import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Gallery,
-    Footer,
   },
 };
 </script>
@@ -38,22 +35,21 @@ export default {
     width: 100%;
     overflow: hidden;
     font-family: 'untitled', helvetica;
-
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 2rem;
     position: relative;
   }
-  header,
-  footer {
+  header {
     position: absolute;
     width: 100%;
+    height: 100%;
     background: transparent;
   }
   h1 {
     margin: 0;
     letter-spacing: -0.5vw;
-    font-size: 19vw;
+    font-size: 18vw;
   }
   ul {
     padding: 0;
