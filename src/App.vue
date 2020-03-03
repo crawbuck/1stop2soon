@@ -23,12 +23,12 @@ export default {
 
 <style lang="scss">
   @font-face {
-    font-family: 'Bobby';
-    src: url('assets/F37Bobby-Regular.eot'); /* IE9 Compat Modes */
-    src: url('assets/F37Bobby-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('assets/F37Bobby-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('assets/F37Bobby-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('assets/F37Bobby-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: 'untitled';
+    src: url('assets/untitled-sans-medium.eot'); /* IE9 Compat Modes */
+    src: url('assets/untitled-sans-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/untitled-sans-medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('assets/untitled-sans-medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('assets/untitled-sans-medium.ttf')  format('truetype'); /* Safari, Android, iOS */
   }
   body {
     margin: 0;
@@ -37,10 +37,9 @@ export default {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    font-family: 'Bobby', serif;
-    font-weight: 900;
-    font-style: italic;
-    text-transform: capitalize;
+    font-family: 'untitled', helvetica;
+
+    text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 2rem;
     position: relative;
