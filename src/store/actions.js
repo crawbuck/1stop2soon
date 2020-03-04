@@ -7,7 +7,7 @@ const actions = {
       .then((chan) => {
         chan.contents.map((item) => context.commit('addItem', item));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => err);
   },
 };
 
