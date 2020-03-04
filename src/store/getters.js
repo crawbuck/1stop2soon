@@ -1,7 +1,7 @@
 const getters = {
-	items(state) {
-		return state.items;
-	}
-}
+  items(state) {
+    return state.items;
+  },
+};
 
 export default getters;
