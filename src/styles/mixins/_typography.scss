@@ -1,0 +1,30 @@
+@mixin typography(
+  $family: 'Untitled',
+  $font-size: 16px,
+  $fluid-size: null,
+  $weight: 300,
+  $transform: null,
+  $line-height: null,
+  $letter-spacing: null,
+  $font-style: null
+) {
+  font-family: $family;
+  text-transform: $transform;
+  line-height: $line-height;
+  font-weight: $weight;
+  font-style: $font-style;
+
+  @if ($fluid-size) {
+    font-size: $fluid-size;
+  } @else {
+    font-size: $font-size;
+    font-size: get-rem($font-size);
+  }
+
+  // as this is calling a function
+  // we can't rely on null to prevent any output
+  // so we need to manually check
+  @if ($letter-spacing) {
+    letter-spacing: get-ems($letter-spacing);
+  }
+}

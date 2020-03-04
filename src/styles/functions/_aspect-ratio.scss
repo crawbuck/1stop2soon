@@ -1,0 +1,4 @@
+@function aspect-ratio($x, $y) {
+  $percentage: ($y / $x) * 100%;
+  @return round($percentage);
+}

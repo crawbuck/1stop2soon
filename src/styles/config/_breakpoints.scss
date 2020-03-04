@@ -1,0 +1,10 @@
+$breakpoints: (
+  tablet: "(min-width: 768px)",
+  phablet: "(min-width: 1025px)",
+  desktop: "(min-width: 1200px)",
+  bigger-desktop: "(min-width: 1400px)",
+  not-micro: "(min-width: 321px)",
+  upto-tablet: "(max-width: 767px)",
+  upto-phablet: "(max-width: 1024px)",
+  upto-desktop: "(max-width: 1199px)"
+);

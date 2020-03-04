@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @import './styles/style.scss';
   @font-face {
     font-family: 'untitled';
     src: url('assets/untitled-sans-medium.eot'); /* IE9 Compat Modes */
@@ -39,17 +40,6 @@ export default {
     letter-spacing: .2rem;
     font-size: 2rem;
     position: relative;
-  }
-  header {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-  }
-  h1 {
-    margin: 0;
-    letter-spacing: -0.5vw;
-    font-size: 18vw;
   }
   ul {
     padding: 0;

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: palette(charade);
+  -webkit-tap-highlight-color: palette(ecru);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  // font-family: get($typography, serif);
+  color: palette(ecru);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+figure,
+b {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+  line-height: 1.85;
+}
+
+img,
+svg {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.15);
+}
