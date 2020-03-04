@@ -7,12 +7,12 @@ $component: ".header";
 		position: fixed;
 		top:0;
 		left:0;
-		text-transform: uppercase;
     @include typography(
       $family: "Untitled",
       $weight: 400,
       $font-size: 28px,
       $letter-spacing: 1px,
+      $transform: uppercase,
       $font-style: normal
     );
 		span {
