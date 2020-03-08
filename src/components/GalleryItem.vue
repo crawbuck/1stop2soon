@@ -1,7 +1,7 @@
 <template>
   <li class="gallery__item">
     <img class="gallery__img" v-lazy="source" />
-    <h1 v-if="outsideTrain">
+    <h1 v-if="outsideTrain" class="gallery__title" >
       {{ outsideTrain }}
     </h1>
   </li>
