@@ -1,0 +1,13 @@
+$component: ".intro";
+#{$component} {
+	&__copy {
+    @include typography(
+      $family: "Untitled",
+      $weight: 400,
+      $font-size: 20px,
+      $letter-spacing: 0px,
+      $transform: normal,
+      $font-style: normal
+    );		
+	}
+}

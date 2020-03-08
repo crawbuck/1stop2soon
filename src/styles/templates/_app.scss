@@ -4,4 +4,10 @@ body {
   overflow: hidden;
   font-size: 2rem;
   position: relative;
+  .show {
+  	display: block;
+  }
+  .hide {
+  	display: none;
+  }
 }

@@ -4,6 +4,9 @@ const mutations = {
     items.push(payload);
     state.items = items;
   },
+  showPhotos(state) {
+    state.showPhotos = true;
+  },
 };
 
 export default mutations;

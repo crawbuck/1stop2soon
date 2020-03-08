@@ -9,6 +9,9 @@ const actions = {
       })
       .catch((err) => err);
   },
+  showPhotos(context) {
+    context.commit('showPhotos');
+  },
 };
 
 export default actions;
