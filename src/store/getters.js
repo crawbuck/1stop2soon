@@ -5,6 +5,9 @@ const getters = {
   showPhotos(state) {
     return state.showPhotos;
   },
+  activePhotos(state) {
+    return state.activePhotos;
+  },
 };
 
 export default getters;

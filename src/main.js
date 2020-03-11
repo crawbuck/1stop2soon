@@ -6,7 +6,11 @@ import App from './App.vue';
 
 Vue.config.productionTip = false;
 
-Vue.use(VueLazyload);
+Vue.use(VueLazyload, {
+  attempt: 2,
+  preLoad: 1.5,
+  observer: true,
+});
 
 new Vue({
   store,

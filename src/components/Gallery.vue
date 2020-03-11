@@ -1,6 +1,6 @@
 <template>
 <ul class="gallery">
-  <GalleryItem v-for="(item, index) in items" :key="index" :item="item" />
+  <GalleryItem v-for="(item, index) in items" :key="index" :position="index" :item="item" />
 </ul>
 </template>
 

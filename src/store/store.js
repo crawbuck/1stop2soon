@@ -10,6 +10,7 @@ const store = new Vuex.Store({
   state: {
     items: [],
     showPhotos: false,
+    activePhotos: [],
   },
   getters,
   mutations,

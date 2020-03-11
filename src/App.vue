@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <Intro v-if="!showPhotos" />
-    <main :class="showPhotos ? 'show' :  'hide'">
+    <div :class="showPhotos ? 'show' :  'hide'">
       <Header title="one stop too soon" />
       <Gallery />
-    </main>
+    </div>
   </div>
 </template>
 
