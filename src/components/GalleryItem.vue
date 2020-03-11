@@ -1,5 +1,5 @@
 <template>
-  <li :class="isActive ===  position ? 'gallery__item gallery__item--active' : 'gallery__item' ">
+  <li class="gallery__item">
     <img class="gallery__img" v-lazy="source" />
     <h1 v-if="outsideTrain" class="gallery__title" >
       {{ outsideTrain }}
@@ -30,13 +30,6 @@ export default {
     },
     outsideTrain() {
       return this.item.title === 'outside' ? this.item.description : false;
-    },
-  },
-  methods: {
-    isActive() {
-      const photos = this.activePhotos;
-      console.log(photos);
-      return false;
     },
   },
 };
