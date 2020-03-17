@@ -12,6 +12,7 @@ const mutations = {
   },
   activePhotos(state) {
     const max = state.items.length - 1;
+    state.activePhotos = [randomNumber(max), randomNumber(max)];
     setInterval(() => {
       state.activePhotos = [randomNumber(max), randomNumber(max)];
     }, 3000);
