@@ -1,19 +1,18 @@
 $component: ".intro";
 #{$component} {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100%;
   width: 100%;
-  padding: 4vw;
+  padding: 2vw 8vw;
 	&__copy {
-    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 30px;
     @include typography(
-      $family: "Untitled",
+      $family: 'Crimson',
       $weight: 400,
       $font-size: 20px,
       $letter-spacing: 0px,
@@ -24,7 +23,7 @@ $component: ".intro";
 	}
   &__btn {
     @include typography(
-      $family: "Untitled",
+      $family: Helvetica,
       $weight: 400,
       $font-size: 20px,
       $letter-spacing: 0px,
