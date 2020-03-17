@@ -9,6 +9,9 @@ $component: ".intro";
   width: 100%;
   padding: 4vw;
 	&__copy {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     @include typography(
       $family: "Untitled",
       $weight: 400,
@@ -19,4 +22,29 @@ $component: ".intro";
       $font-style: normal
     );		
 	}
+  &__btn {
+    @include typography(
+      $family: "Untitled",
+      $weight: 400,
+      $font-size: 20px,
+      $letter-spacing: 0px,
+      $line-height: 50px,
+      $transform: uppercase,
+      $font-style: normal
+    );    
+    appearance: none;
+    -webkit-appearance: none;
+    text-decoration:none;
+    color: palette('ecru');
+    font-weight:bold;
+    padding:0 50px;
+    height: auto;
+    display:inline-block;
+    text-align:center;
+    background-color: transparent;
+    border: 1px solid palette('ecru');
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;  
+  }
 }
