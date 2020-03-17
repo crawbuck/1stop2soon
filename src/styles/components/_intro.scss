@@ -7,8 +7,9 @@ $component: ".intro";
   text-align: center;
   height: 100%;
   width: 100%;
-  padding: 2vw 8vw;
+  padding: 8vw;
 	&__copy {
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 30px;
     @include typography(
@@ -24,7 +25,7 @@ $component: ".intro";
   &__btn {
     @include typography(
       $family: Helvetica,
-      $weight: 400,
+      $weight: 600,
       $font-size: 20px,
       $letter-spacing: 0px,
       $line-height: 50px,
