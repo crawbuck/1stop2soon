@@ -1,3 +1,6 @@
+
+import randomNumber from '../utils/randomNumber';
+
 const mutations = {
   addItem(state, payload) {
     const items = [...state.items];
@@ -6,6 +9,12 @@ const mutations = {
   },
   showPhotos(state) {
     state.showPhotos = true;
+  },
+  activePhotos(state) {
+    const max = state.items.length - 1;
+    setInterval(() => {
+      state.activePhotos = [randomNumber(max), randomNumber(max)];
+    }, 3000);
   },
 };
 

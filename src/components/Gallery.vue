@@ -1,46 +1,28 @@
 <template>
-<slick ref="slick" v-if="showPhotos" class="gallery" :options="options">
+<ul class="gallery">
   <GalleryItem v-for="(item, index) in items"
+    :active-photos="activePhotos"
     :key="index"
-    :item="item"
-  />
-</slick>
+    :position="index"
+    :item="item">
+  </GalleryItem>
+</ul>
 </template>
 
 <script>
-import { mapGetters, mapState } from 'vuex';
-import Slick from 'vue-slick';
+import { mapGetters } from 'vuex';
 import GalleryItem from './GalleryItem.vue';
 
 export default {
   name: 'Gallery',
   computed: {
-    ...mapState(['showPhotos']),
     ...mapGetters([
       'items',
+      'activePhotos',
     ]),
   },
   components: {
     GalleryItem,
-    Slick,
-  },
-  data() {
-    return {
-      options: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        rows: 0,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        mobileFirst: true,
-        fade: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        swipe: false,
-        touchMove: false,
-      },
-    };
   },
 };
 </script>
