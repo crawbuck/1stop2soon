@@ -1,6 +1,11 @@
 <template>
 <ul class="gallery">
-  <GalleryItem v-for="(item, index) in items" :key="index" :position="index" :item="item" />
+  <GalleryItem v-for="(item, index) in items"
+    :active-photos="activePhotos"
+    :key="index"
+    :position="index"
+    :item="item">
+  </GalleryItem>
 </ul>
 </template>
 
@@ -13,6 +18,7 @@ export default {
   computed: {
     ...mapGetters([
       'items',
+      'activePhotos',
     ]),
   },
   components: {
